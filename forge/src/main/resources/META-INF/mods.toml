@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/mahmudindev/mcmod-amplifieddimension/issues"
+license = "ARR"
+
+[[mods]]
+modId = "amplifieddimension"
+version = "${version}"
+displayName = "Amplified Dimension"
+authors = "mahmudindev"
+description = '''
+Add amplified as separate dimension.
+'''
+logoFile = "assets/amplifieddimension/icon.png"
+
+[[dependencies.amplifieddimension]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.amplifieddimension]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.amplifieddimension]]
+modId = "worldportal"
+mandatory = true
+versionRange = "[0.0.9,)"
+ordering = "NONE"
+side = "SERVER"
