@@ -35,4 +35,4 @@ ordering = "NONE"
 side = "SERVER"
 
 [[mixins]]
-config = "superflatdimension.mixins.json"
+config = "amplifieddimension.mixins.json"
