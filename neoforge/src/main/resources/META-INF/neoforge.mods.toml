@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "Amplified Dimension"
 authors = "mahmudindev"
 description = '''
-Add amplified as separate dimension.
+Add amplified world type as separate dimension.
 '''
 logoFile = "assets/amplifieddimension/icon.png"
 
@@ -26,6 +26,13 @@ type = "required"
 versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.amplifieddimension]]
+modId = "dimensionfixer"
+type = "required"
+versionRange = "[0.0.9,)"
+ordering = "NONE"
+side = "SERVER"
 
 [[dependencies.amplifieddimension]]
 modId = "worldportal"
