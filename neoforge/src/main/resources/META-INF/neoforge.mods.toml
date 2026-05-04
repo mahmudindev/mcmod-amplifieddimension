@@ -1,45 +1,45 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
+loaderVersion = "${neoforge_loader_version_range}"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-amplifieddimension/issues"
-license = "ARR"
+license = "${mod_license}"
 
 [[mods]]
-modId = "amplifieddimension"
+modId = "${mod_id}"
 version = "${version}"
-displayName = "Amplified Dimension"
-authors = "mahmudindev"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
 description = '''
-Add amplified world type as separate dimension.
+${description}
 '''
-logoFile = "assets/amplifieddimension/icon.png"
+logoFile = "assets/${mod_id}/icon.png"
 
-[[dependencies.amplifieddimension]]
+[[dependencies.${mod_id}]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "${neoforge_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.amplifieddimension]]
+[[dependencies.${mod_id}]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.amplifieddimension]]
+[[dependencies.${mod_id}]]
 modId = "dimensionfixer"
 type = "required"
-versionRange = "[0.0.9,)"
+versionRange = "[${dimensionfixer_version},)"
 ordering = "NONE"
 side = "SERVER"
 
-[[dependencies.amplifieddimension]]
+[[dependencies.${mod_id}]]
 modId = "worldportal"
 type = "required"
-versionRange = "[0.0.9,)"
+versionRange = "[${worldportal_version},)"
 ordering = "NONE"
 side = "SERVER"
 
 [[mixins]]
-config = "amplifieddimension.mixins.json"
+config = "${mod_id}.mixins.json"
